@@ -70,7 +70,6 @@ li {
 }
 
 .shop {
-	display: inline-block;
 	float: right;
 	padding: 5px 10px;
 	height: 60px;
@@ -107,7 +106,7 @@ main {
 
 #content {
 	grid-area: content;
-	padding: 5% 10% 5% 5%;
+	padding: 5% 5% 5% 5%;
 }
 
 .name {
@@ -121,6 +120,11 @@ main {
 	background-color: rgba(255, 0, 0, 0.03);
 	padding-left: 15px;
 }
+
+h3 {
+	font-size: 32px;
+}
+
 /*
 @keyframes name {
 	from {
@@ -133,28 +137,20 @@ main {
 
 .image-div {
 	grid-area: image;
-	width: 410px;
-	height: 400px;
-	position: relative;
-	right: 8px;
+	width: 100%;
+	max-width: 410px;
+	max-height: 400px;
+	background-color: rgba(255, 0, 0, 0.03);
+	border: 1px solid white;
+	border-radius: 50%;
 }
 
 .jam-jar {
 	width: 100%;
 	max-width: 400px;
-	position: relative;
-	z-index: 1;
 }
 
-.splash {
-	width: 100%;
-	max-width: 400px;
-	position: relative;
-	bottom: 400px;
-	opacity: 0.03;
-}
-
-.flavour-content {
+#flavour-content {
 	grid-area: f-content;
 	background-color: rgb(250, 250, 250);
 	/*box-shadow: 1px 1px 2px gray;*/
@@ -173,7 +169,6 @@ main {
 }
 
 .price {
-	display: inline-block;
 	float: right;
 	margin-right: 6px;
 	margin-top: 14px;
@@ -200,7 +195,7 @@ h5 {
 	text-align: center;
 }
 
-.video-div {
+#video-div {
 	grid-area: video;
 	/*background-color: rgba(255, 0, 0, 0.03);*/
 	padding: 20px;
@@ -217,7 +212,7 @@ h5 {
 	background-color: rgba(255, 0, 0, 0.05);
 }
 
-.video {
+#video {
 	display: block;
 	margin: auto;
 	border-top: 20px solid rgb(0, 0, 0, 0);
@@ -227,29 +222,206 @@ footer {
 	background-color: rgb(100, 0, 0);
 	color: white;
 	display: flex;
-	margin: 10px 30px 0px 30px;
+	margin-top: 0.5%;
 	padding: 30px;
 }
 
 .left-foot {
-	font-size: 80px;
-	font-family: neucha;
+	flex: 1;
+	font-size: 16px;
+	padding: 2% 0% 0% 4%;
 }
 
 .right-foot {
 	text-align: right;
-	flex: 1;
-	font-size: 20px;
+	font-size: 80px;
+	font-family: neucha;
+}
+
+input {
+	font-size: 12px;
+	margin-top: 1%;
+	margin-right: 1%;
+	padding: 2px;
+	background-color: rgb(255, 242, 242);
+	border: none;
+}
+
+#email {
+	width: 30%;
+}
+
+#submit {
+	width: 17%;
 }
 
 @media (max-width: 775px) {
+	h1 {
+		font-size: 30px;
+	}
+
+	nav {
+		flex: 1;
+		margin-left: 1%;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		display: block;
+		height: 30px;
+		padding: 0px;
+		width: 100%;
+		margin: auto;
+	}
+
+	.nav-link {
+		text-align: center;
+		padding: 5px;
+		line-height: 20px;
+		display: block;
+		margin: 2px;
+		text-decoration: none;
+		color: black;
+		font-size: 12px;
+		transition: all 0.3s linear;
+		border-bottom: 2px solid rgb(236, 236, 236);
+	}
+
+	.nav-link:hover {
+		color: rgb(150, 0, 0);
+		border-bottom: 4px solid rgb(100, 0, 0);
+		background-color: rgba(255, 0, 0, 0.05);
+	}
+
+	.shop {
+		align-self: center;
+		padding: 5px 10px;
+		height: 60px;
+		line-height: 58px;
+	}
+
+	.button {
+		background-color: sienna;
+		padding: 7px;
+		text-decoration: none;
+		background-color: rgb(100, 0, 0);
+		/*border: 2px solid rgba(255, 255, 255, 0.8);
+		box-shadow: 3px 2px 3px gray;
+		*/
+		border-radius: 10%;
+		color: white;
+		transition: all 0.3s ease;
+		margin-bottom: 10px;
+		font-size: 12px;
+	}
+
+	.button:hover {
+		color: rgb(150, 0, 0);
+		border-bottom: 4px solid rgb(100, 0, 0);
+		background-color: rgba(255, 0, 0, 0.05);
+	}
+
 	main {
+		margin: 100px 2% 0px 2%;
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
 	}
 
+	.name {
+		font-size: 50px;
+		font-family: neucha;
+		color: rgb(100, 0, 0);
+		border-left: 8px solid rgb(100, 0, 0);
+		/*border-style: groove;
+		animation-fill-mode: forwards;
+		animation: name 10s ease;*/
+		background-color: rgba(255, 0, 0, 0.03);
+		padding-left: 15px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
 	.image-div {
 		align-self: center;
+	}
+
+	.arrow {
+		display: none;
+	}
+
+	#flavour-content {
+		background-color: rgb(250, 250, 250);
+		/*box-shadow: 1px 1px 2px gray;*/
+		margin-bottom: 7%;
+	}
+
+	.flavour-title {
+		margin-top: 20px;
+		font-size: 28px;
+		text-align: center;
+	}
+
+	#video-div {
+		width: 100%;
+		grid-area: video;
+		/*background-color: rgba(255, 0, 0, 0.03);*/
+		padding: 1%;
+	}
+
+	.vid-caption {
+		font-size: 16px;
+		width: 96%;
+		margin: auto;
+		color: rgb(100, 0, 0);
+		border-top: 4px solid rgb(100, 0, 0);
+		border-bottom: 4px solid rgb(100, 0, 0);
+		text-align: center;
+		background-color: rgba(255, 0, 0, 0.05);
+	}
+
+	#video {
+		width: 100%;
+		height: 315px;
+		display: block;
+		margin: auto;
+		border-top: 20px solid rgb(0, 0, 0, 0);
+	}
+	.left-foot {
+		flex: 1;
+		font-size: 10px;
+	}
+
+	.right-foot {
+		text-align: right;
+		font-size: 28px;
+		font-family: neucha;
+	}
+
+	#input {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 425px) {
+	.nav-link {
+		font-size: 8px;
+	}
+
+	.button {
+		font-size: 8px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	input {
+		font-size: 8px;
 	}
 }
