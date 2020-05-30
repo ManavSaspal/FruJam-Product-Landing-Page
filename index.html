@@ -14,17 +14,29 @@
 	<body>
 		<header id="header">
 			<div class="logo">
-				<img id="header-img" src="frujam-logo.png" alt="FruJam Logo" />
+				<img
+					id="header-img"
+					src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/frujam-logo.png?raw=true"
+					alt="FruJam Logo"
+				/>
 				<h1>FruJam&trade;</h1>
 			</div>
 			<nav id="nav-bar">
 				<ul>
 					<li><a class="nav-link" href="#content">Why FruJam?</a></li>
-					<li><a class="nav-link" href="">Flavours and Prices</a></li>
-					<li><a class="nav-link" href="">Official TV Commercial</a></li>
-					<li class="shop"><a class="button" href="">Shop Now</a></li>
+					<li>
+						<a class="nav-link" href="#flavour-content">Flavours and Prices</a>
+					</li>
+					<li>
+						<a class="nav-link" href="#video-div">Official TV Commercial</a>
+					</li>
 				</ul>
 			</nav>
+			<div class="shop">
+				<a class="button" href="https://www.amazon.com/" target="_blank"
+					>Shop Now</a
+				>
+			</div>
 		</header>
 		<main>
 			<div id="content">
@@ -32,10 +44,10 @@
 					FruJam&trade;
 				</h2>
 				<br />
-				<h3 style="font-size: 32px;">It's Fruit Jam.</h3>
+				<h3>It's Fruit Jam.</h3>
 				<h4>
 					<em>
-						<span style="color: rgba(0, 0, 0, 0.8); font-size: 16px;">
+						<span style="color: rgba(0, 0, 0, 0.8);">
 							It's Tasty.
 						</span>
 						<span style="color: rgba(0, 0, 0, 0.6);"> It's Tasty.</span>
@@ -43,43 +55,66 @@
 					</em>
 				</h4>
 				<br /><br />
-				<a class="button" href="">Explore</a>
+				<a class="button" href="https://www.amazon.com/">Explore</a>
 			</div>
 			<div class="image-div">
-				<img class="jam-jar" src="jam-jar.png" alt="" />
-				<img class="splash" src="red-circle.png" alt="" />
+				<img
+					class="jam-jar"
+					src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/jam-jar.png?raw=true"
+					alt=""
+				/>
 			</div>
 			<div class="flavour-title">
-				<img src="arrow.png" alt="arrow" class="arrow" />
+				<img
+					src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/arrow.png?raw=true"
+					alt="arrow"
+					class="arrow"
+				/>
 				<h5>
 					Flavours<br />
 					& Prices
 				</h5>
 			</div>
-			<div class="flavour-content">
+			<div id="flavour-content">
 				<div class="flavour">
-					<img src="orange.png" alt="" class="flavour-icon" />
+					<img
+						src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/orange.png?raw=true"
+						alt=""
+						class="flavour-icon"
+					/>
 					Orange <span class="price">$ 18.00</span>
 				</div>
 				<div class="flavour">
-					<img src="strawberry.png" alt="" class="flavour-icon" />
+					<img
+						src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/strawberry.png?raw=true"
+						alt=""
+						class="flavour-icon"
+					/>
 					Strawberry <span class="price">$ 22.00</span>
 				</div>
 				<div class="flavour">
-					<img src="mango.png" alt="" class="flavour-icon" />
+					<img
+						src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/mango.png?raw=true"
+						alt=""
+						class="flavour-icon"
+					/>
 					Mango <span class="price">$ 20.00</span>
 				</div>
 				<div class="flavour">
-					<img src="mix.png" alt="" class="flavour-icon" />
+					<img
+						src="https://github.com/ManavSaspal/FruJam-Product-Landing-Page/blob/master/mix.png?raw=true"
+						alt=""
+						class="flavour-icon"
+					/>
 					Mixed Fruit <span class="price">$ 20.00</span>
 				</div>
 			</div>
-			<div class="video-div">
+			<div id="video-div">
 				<div class="vid-caption">
 					Official TV Commercial
 				</div>
 				<iframe
-					class="video"
+					id="video"
 					width="560"
 					height="315"
 					src="https://www.youtube.com/embed/SdaFrEdoVMw?start=4"
@@ -91,11 +126,19 @@
 		</main>
 		<footer id="footer">
 			<div class="left-foot">
-				Frujam&trade;
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<label for="email">Subscribe to our newsletter: </label><br />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Enter your Email"
+					/>
+					<input type="submit" />
+				</form>
 			</div>
 			<div class="right-foot">
-				Some realy Boring Stuff.<br />
-				<span style="font-size: 16px;">More Boring Stuff.</span>
+				FruJam
 			</div>
 		</footer>
 	</body>
