@@ -119,6 +119,7 @@ main {
 	animation: name 10s ease;*/
 	background-color: rgba(255, 0, 0, 0.03);
 	padding-left: 15px;
+	padding-top: 8px;
 }
 
 h3 {
